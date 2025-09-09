@@ -1,0 +1,14 @@
+<button (click)="updateAll()">ОбновитьБазу</button>
+<div *ngIf="cleanUpdate$ | async as resultUpdate">
+    @for(text of resultUpdate; track text) {
+        <h3>{{ text }}</h3>
+    }
+</div>
+
+<div *ngIf="data$ | async as tovars" class="tovar-card__wraper">
+    @for(tovar of tovars; track tovar.id){
+        <app-tovar-profile
+        [tovar]="tovar"
+        ></app-tovar-profile>
+    }
+</div>

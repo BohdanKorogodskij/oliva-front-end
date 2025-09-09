@@ -1,0 +1,32 @@
+.tovar-profile {
+    border: 1px solid var(--light-color);
+    padding: 32px 24px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr) 250px 1fr;
+    grid-gap: 32px;
+}
+
+.avatar-tovar {
+    display: grid;
+    grid-template-columns: 70px 1fr;
+    grid-gap: 20px;
+}
+
+.tovar-profile__avatar {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+            
+.tovar-profile__name {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.tovar-parofile__tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+}

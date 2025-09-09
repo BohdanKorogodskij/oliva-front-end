@@ -1,0 +1,30 @@
+
+@if (tovar) {
+    <div class="tovar-profile">
+        <div class="avatar-tovar">
+            <img 
+            src="{{ 'assets/images/oliva.jpeg' }}" 
+            [alt]="tovar.name" class="tovar-profile__avatar">
+    
+            <div class="tovar-profile__name">
+                <strong class="h6">{{ tovar.name }}</strong>
+                <span class="subtitle">что-то</span>
+            </div>
+        </div>
+    
+        <div class="tovar-profile__description">
+            {{ tovar.name }}
+        </div>
+        
+        <div class="tovar-parofile__tags">
+            <!-- @for (typesTovar of tovar.type; track typesTovar) {
+                <div class="tovar-tag">{{ typesTovar }}</div>
+            } -->
+            <div class="tovar-tag">Плодовые</div>
+        </div>
+    
+        <div class="tovar-profile__action-btns">
+            <button class="btn">Купить</button>
+        </div>
+    </div>
+}

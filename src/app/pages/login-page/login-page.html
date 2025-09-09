@@ -1,0 +1,16 @@
+<form class="login-form" [formGroup]="form" (ngSubmit)="onSubmit($event)">
+    <h1 class="h1">Вход</h1>
+
+    <label class="control-label">
+        Пользовательское имя
+        <input formControlName="username" class="input-label" type="text" placeholder="введите логин">
+    </label>
+
+    <label class="control-label">
+        Пароль
+        <input formControlName="password" class="input-label" type="text" placeholder="введите логин">
+    </label>
+
+    <button class="btn btn-shadow" type="submit">Войти</button>
+</form>
+<img src="/assets/images/bonsai-garden-gardening.svg" alt="logo">
