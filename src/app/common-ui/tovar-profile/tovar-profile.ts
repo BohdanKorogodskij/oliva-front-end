@@ -9,5 +9,6 @@ import { CommonModule } from '@angular/common';
   styleUrl: './tovar-profile.scss'
 })
 export class TovarProfile {
+  // получает компонент от родителя данные о товаре, компонет TovarProfile отрисовывает
   @Input() tovar?: ITovar;
 }
