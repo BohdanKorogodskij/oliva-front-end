@@ -1,30 +1,46 @@
-
 @if (tovar) {
-    <div class="tovar-profile">
-        <div class="avatar-tovar">
-            <img 
-            src="{{ 'assets/images/oliva.jpeg' }}" 
-            [alt]="tovar.name" class="tovar-profile__avatar">
-    
-            <div class="tovar-profile__name">
-                <strong class="h6">{{ tovar.name }}</strong>
-                <span class="subtitle">что-то</span>
-            </div>
-        </div>
-    
-        <div class="tovar-profile__description">
-            {{ tovar.name }}
-        </div>
-        
-        <div class="tovar-parofile__tags">
-            <!-- @for (typesTovar of tovar.type; track typesTovar) {
-                <div class="tovar-tag">{{ typesTovar }}</div>
-            } -->
-            <div class="tovar-tag">Плодовые</div>
-        </div>
-    
-        <div class="tovar-profile__action-btns">
-            <button class="btn">Купить</button>
+<!-- <div class="tovar-profile">
+    <div class="avatar-tovar">
+        <img src="{{ 'assets/images/oliva.jpeg' }}" [alt]="tovar.name" class="tovar-profile__avatar">
+
+        <div class="tovar-profile__name">
+            <strong class="h6">{{ tovar.name }}</strong>
+            <span class="subtitle">что-то</span>
         </div>
     </div>
+
+    <div class="tovar-profile__description">
+        {{ tovar.name }}
+    </div>
+
+    <div class="tovar-parofile__tags">
+        <div class="tovar-tag">Плодовые</div>
+    </div>
+
+    <div class="tovar-profile__action-btns">
+        <button class="btn">Купить</button>
+    </div>
+</div> -->
+
+
+
+
+
+
+<div class="card" style="width: 18rem;">
+    <img src="{{ 'assets/images/oliva.jpeg' }}" [alt]="tovar.name" class="tovar-profile__avatar">
+    <div class="card-body">
+        <h5 class="card-title">{{ tovar.name }}</h5>
+        <p class="card-text">{{ tovar.name }}</p>
+    </div>
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item">An item</li>
+        <li class="list-group-item">A second item</li>
+        <li class="list-group-item">A third item</li>
+    </ul>
+    <div class="card-body">
+        <a href="#" class="card-link">Card link</a>
+        <a href="#" class="card-link">Another link</a>
+    </div>
+</div>
 }
