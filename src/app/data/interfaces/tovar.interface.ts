@@ -2,5 +2,6 @@
 export interface ITovar {
     id: number,
     name: string,
-    salePrice: number
+    salePrice: number,
+    description: string
 }
