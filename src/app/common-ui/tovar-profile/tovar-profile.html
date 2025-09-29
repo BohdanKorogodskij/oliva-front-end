@@ -29,7 +29,7 @@
     <div class="card__top">
         <!-- Изображение-ссылка товара -->
         <a href="#" class="card__image">
-            <img src="{{ 'assets/images/oliva.jpeg' }}" [alt]="tovar.name" />
+            <img src="{{ tovar.imgPath }}" [alt]="tovar.name" />
         </a>
         <!-- Скидка на товар -->
         <div class="card__label">-20%</div>
@@ -38,7 +38,7 @@
     <div class="card__bottom">
         <!-- Цены на товар (с учетом скидки и без)-->
         <div class="card__prices">
-            <div class="card__price card__price--discount">135 000</div>
+            <div class="card__price card__price--discount">цена со скидкой СДЕСЬ!</div>
             <div class="card__price card__price--common">{{ tovar.salePrice }}</div>
         </div>
         <!-- Ссылка-название товара -->

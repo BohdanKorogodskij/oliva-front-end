@@ -3,5 +3,6 @@ export interface ITovar {
     id: number,
     name: string,
     salePrice: number,
-    description: string
+    description: string,
+    imgPath: string
 }
