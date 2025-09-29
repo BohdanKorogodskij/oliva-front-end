@@ -23,51 +23,30 @@
 </div> -->
 
 
-
-
-
-
-<!-- <div class="card" style="width: 18rem;">
-    <img src="{{ 'assets/images/oliva.jpeg' }}" [alt]="tovar.name" class="tovar-profile__avatar">
-    <div class="card-body">
-        <h5 class="card-title">{{ tovar.name }}</h5>
-        <p class="card-text">{{ tovar.name }}</p>
+<!-- Карточка товара -->
+<div class="card">
+    <!-- Верхняя часть -->
+    <div class="card__top">
+        <!-- Изображение-ссылка товара -->
+        <a href="#" class="card__image">
+            <img src="{{ 'assets/images/oliva.jpeg' }}" [alt]="tovar.name" />
+        </a>
+        <!-- Скидка на товар -->
+        <div class="card__label">-20%</div>
     </div>
-    <ul class="list-group list-group-flush">
-        <li class="list-group-item">An item</li>
-        <li class="list-group-item">A second item</li>
-        <li class="list-group-item">A third item</li>
-    </ul>
-    <div class="card-body">
-        <a href="#" class="card-link">Card link</a>
-        <a href="#" class="card-link">Another link</a>
-    </div>
-</div> -->
-
-
-
-
-<div class="col-md-4 d-flex">
-    <div class="product ftco-animate">
-        <div class="img d-flex align-items-center justify-content-center"
-            style="background-image: url(../../../assets/images/oliva.jpeg);">
-            <div class="desc">
-                <p class="meta-prod d-flex">
-                    <a href="#" class="d-flex align-items-center justify-content-center"><span
-                            class="flaticon-shopping-bag"></span></a>
-                    <a href="#" class="d-flex align-items-center justify-content-center"><span
-                            class="flaticon-heart"></span></a>
-                    <a href="#" class="d-flex align-items-center justify-content-center"><span
-                            class="flaticon-visibility"></span></a>
-                </p>
-            </div>
+    <!-- Нижняя часть -->
+    <div class="card__bottom">
+        <!-- Цены на товар (с учетом скидки и без)-->
+        <div class="card__prices">
+            <div class="card__price card__price--discount">135 000</div>
+            <div class="card__price card__price--common">150 000</div>
         </div>
-        <div class="text text-center">
-            <span class="sale">Sale</span>
-            <span class="category">Brandy</span>
-            <h2>Bacardi 151</h2>
-            <p class="mb-0"><span class="price price-sale">$69.00</span> <span class="price">$49.00</span></p>
-        </div>
+        <!-- Ссылка-название товара -->
+        <a href="#" class="card__title">
+            {{ tovar.name }}
+        </a>
+        <!-- Кнопка добавить в корзину -->
+        <button class="card__add">Ознакомится</button>
     </div>
 </div>
 }
