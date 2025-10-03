@@ -1,4 +1,4 @@
 export interface ITovarImg {
-    ImgPath: string,
+    Path: string,
     TovarId: string
 }

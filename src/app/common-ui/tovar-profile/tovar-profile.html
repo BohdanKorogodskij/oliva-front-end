@@ -29,7 +29,16 @@
     <div class="card__top">
         <!-- Изображение-ссылка товара -->
         <a href="#" class="card__image">
-            <img src="{{tovar.imgPath[0].ImgPath}}" [alt]="tovar.name" />
+            @if (tovar.imgPath.length === 0) {
+                <p>отсутствует</p>
+            } 
+            @if (tovar.imgPath.length !== 0) {
+                <img [src]="tovar.imgPath[0].Path" [alt]="tovar.name" />
+            }
+            <!-- else {
+                <img src="{{tovar.imgPath[0].Path}}" [alt]="tovar.name" />
+            } -->
+            <!-- @for() -->
             <!-- <img src="https://localhost:7064/images/102015015.jpg" [alt]="tovar.name" /> -->
         </a>
         <!-- Скидка на товар -->
