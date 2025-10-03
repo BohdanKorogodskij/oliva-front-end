@@ -1,5 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { ITovar } from '../../data/interfaces/tovar.interface';
+import { ITovarImg } from '../../data/interfaces/image.interface';
 import { CommonModule } from '@angular/common';  
 
 @Component({
